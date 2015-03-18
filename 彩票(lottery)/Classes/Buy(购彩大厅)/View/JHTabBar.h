@@ -22,4 +22,12 @@
 
 @property (weak , nonatomic) id<JHTabBarDelegate> delegate;
 
+/**
+ *  提供给外界创建按钮
+ *
+ *  @param norName 默认状态的图片
+ *  @param disName 高亮状态的图片
+ */
+- (void)addTabBarButtonWithNormalImageName:(NSString *)norName andDisableImageName:(NSString *)disName;
+
 @end

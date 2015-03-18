@@ -25,6 +25,17 @@
     myTabBar.delegate = self;
     
     [self.view addSubview:myTabBar];
+    
+    // 1.1根据系统子控制器的个数来创建自定义TabBar上按钮的个数
+    for (int i = 0; i < self.viewControllers.count; i++) {
+        // 通知自定义TabBar创建按钮
+        NSString *norImageName = [NSString stringWithFormat:@"TabBar%d", i + 1];
+        NSString *disableImageName = [NSString stringWithFormat:@"TabBar%dSel", i + 1];
+        
+        // 只要调用自定义TabBar的该方法就会创建一个按钮
+        [myTabBar addTabBarButtonWithNormalImageName:norImageName andDisableImageName:disableImageName];
+    }
+    
         
     // 2.删除系统自带的TabBar
     [self.tabBar removeFromSuperview];
