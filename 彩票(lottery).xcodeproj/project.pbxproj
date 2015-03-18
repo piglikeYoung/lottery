@@ -18,6 +18,7 @@
 		7DCA6E2A1AB96168009904FB /* JHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E291AB96168009904FB /* JHTabBarButton.m */; };
 		7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E491AB96230009904FB /* JHTitleButton.m */; };
 		7DCE9EAB1AB982CA00F7FA30 /* JHBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE9EAA1AB982CA00F7FA30 /* JHBuyController.m */; };
+		7DCE9EAE1AB99F0B00F7FA30 /* JHSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE9EAD1AB99F0B00F7FA30 /* JHSettingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		7DCE9EA81AB97F4D00F7FA30 /* JHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPrefixHeader.pch; sourceTree = "<group>"; };
 		7DCE9EA91AB982CA00F7FA30 /* JHBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBuyController.h; sourceTree = "<group>"; };
 		7DCE9EAA1AB982CA00F7FA30 /* JHBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBuyController.m; sourceTree = "<group>"; };
+		7DCE9EAC1AB99F0B00F7FA30 /* JHSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSettingController.h; sourceTree = "<group>"; };
+		7DCE9EAD1AB99F0B00F7FA30 /* JHSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSettingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +359,8 @@
 		7DCA6E421AB961A7009904FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7DCE9EAC1AB99F0B00F7FA30 /* JHSettingController.h */,
+				7DCE9EAD1AB99F0B00F7FA30 /* JHSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 				7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */,
 				7DCA6E241AB918D8009904FB /* JHTabBarController.m in Sources */,
 				7DCE9EAB1AB982CA00F7FA30 /* JHBuyController.m in Sources */,
+				7DCE9EAE1AB99F0B00F7FA30 /* JHSettingController.m in Sources */,
 				7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */,
 				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
 				7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */,

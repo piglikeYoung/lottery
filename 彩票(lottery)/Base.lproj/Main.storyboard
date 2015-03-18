@@ -66,16 +66,28 @@
         <!--我的彩票-->
         <scene sceneID="RfF-WJ-7HK">
             <objects>
-                <viewController id="IDh-qm-gBh" sceneMemberID="viewController">
+                <viewController id="IDh-qm-gBh" customClass="JHSettingController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fdX-Lm-KeB"/>
                         <viewControllerLayoutGuide type="bottom" id="4Zm-wK-uQQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="trd-WH-gVP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Fj-cN7">
+                                <rect key="frame" x="5" y="0.0" width="320" height="188"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wue-uU-4mw">
+                                <rect key="frame" x="0.0" y="209" width="320" height="44"/>
+                                <state key="normal" title="登录">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="我的彩票" id="6Po-2W-4T1">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="agt-UX-k6H">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JUC-QY-w0g">
@@ -90,6 +102,9 @@
                         <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="o1d-f3-HUP"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="wue-uU-4mw" id="55v-K3-Jje"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jp-mC-qTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -209,7 +224,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xWs-UZ-Fo0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vfd-LD-Qjl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -266,6 +281,7 @@
     </scenes>
     <resources>
         <image name="FBMM_Barbutton" width="13" height="13"/>
+        <image name="LoginScreen" width="296" height="138"/>
         <image name="Mylottery_config" width="22" height="22"/>
         <image name="YellowDownArrow" width="16" height="16"/>
         <image name="pushSettings" width="14" height="13"/>
