@@ -37,6 +37,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Wkp-Hg-y5G" kind="relationship" relationship="rootViewController" id="4ff-6i-Siv"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jq1-LU-jID" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,10 +55,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="IDh-qm-gBh" kind="relationship" relationship="rootViewController" id="bGm-CN-zqb"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="per-34-6W7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-527" y="719"/>
+        </scene>
+        <!--我的彩票-->
+        <scene sceneID="RfF-WJ-7HK">
+            <objects>
+                <viewController id="IDh-qm-gBh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fdX-Lm-KeB"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Zm-wK-uQQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="trd-WH-gVP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的彩票" id="6Po-2W-4T1"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jp-mC-qTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-527" y="1386"/>
         </scene>
         <!--Item-->
         <scene sceneID="P3Q-R5-DJI">
@@ -67,6 +93,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Np4-vO-yGw" kind="relationship" relationship="rootViewController" id="zAK-Qa-IUG"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swn-6k-NEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,10 +111,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="7Tf-1J-wCP" kind="relationship" relationship="rootViewController" id="lOh-Qp-7hX"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXf-xR-qOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-151" y="-416"/>
+        </scene>
+        <!--购票大厅-->
+        <scene sceneID="ZiB-XW-Vam">
+            <objects>
+                <viewController id="E3G-6j-pYb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uzY-7N-ZY2"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0C-Si-0Yg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FYj-vh-jQO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="购票大厅" id="c8t-5s-hPo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAm-7m-lW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-527" y="-987"/>
         </scene>
         <!--Item-->
         <scene sceneID="3ud-67-3Ox">
@@ -97,10 +149,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="E3G-6j-pYb" kind="relationship" relationship="rootViewController" id="qzP-rl-ah9"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uhr-Vb-RbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-527" y="-416"/>
+            <point key="canvasLocation" x="-588" y="-421"/>
+        </scene>
+        <!--幸运广场-->
+        <scene sceneID="KoT-5X-Spj">
+            <objects>
+                <viewController id="Np4-vO-yGw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V2p-yh-iBr"/>
+                        <viewControllerLayoutGuide type="bottom" id="RHq-9B-I8B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EeO-LH-B2x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="幸运广场" id="Aug-of-Gv3"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8PQ-ZH-QBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="1313"/>
+        </scene>
+        <!--合买跟单-->
+        <scene sceneID="H1E-iV-ceh">
+            <objects>
+                <viewController id="7Tf-1J-wCP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0QF-oC-ntU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xWs-UZ-Fo0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vfd-LD-Qjl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="合买跟单" id="nMZ-Ow-Q4A"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azE-oG-OVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="-987"/>
+        </scene>
+        <!--开奖信息-->
+        <scene sceneID="JBm-vi-q5O">
+            <objects>
+                <viewController id="Wkp-Hg-y5G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E2t-HG-Hda"/>
+                        <viewControllerLayoutGuide type="bottom" id="d1b-Ai-tHo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hb5-vw-d3n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="开奖信息" id="On0-gI-Hmc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3iz-k6-Z3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="168"/>
         </scene>
     </scenes>
 </document>

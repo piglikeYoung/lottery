@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 显示状态栏
+    application.statusBarHidden = NO;
+    // 设置状态栏的颜色
+    application.statusBarStyle  = UIStatusBarStyleLightContent;
     return YES;
 }
 

@@ -39,6 +39,23 @@
         
     // 2.删除系统自带的TabBar
     [self.tabBar removeFromSuperview];
+    
+    // 3.设置导航条的主题
+    // 如果要同时设置很多UINavigationBar的样式, 可以通过设置UINavigationBar的主题的方式来设置以便简化代码
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    // 3.1设置所有导航条的背景图片
+    // 判断当前运行的操作系统的版本
+    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0) {
+        [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+    } else {
+        [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
+    }
+    
+    // 3.2设置所有导航条的标题颜色
+    NSMutableDictionary *md = [NSMutableDictionary dictionary];
+    md[NSFontAttributeName] = [UIFont systemFontOfSize:16];
+    md[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    [navBar setTitleTextAttributes:md];
 }
 
 #pragma mark - JHTabBarDelegate
@@ -47,6 +64,8 @@
     // 切换子控制器
     self.selectedIndex = to;
 }
+
+
 
 
 @end
