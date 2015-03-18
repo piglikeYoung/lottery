@@ -1,0 +1,19 @@
+//
+//  JHPrefixHeader.pch
+//  彩票(lottery)
+//
+//  Created by piglikeyoung on 15/3/18.
+//  Copyright (c) 2015年 jinheng. All rights reserved.
+//
+
+#ifndef ___lottery__JHPrefixHeader_pch
+#define ___lottery__JHPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#endif
+
+

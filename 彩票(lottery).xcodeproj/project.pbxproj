@@ -13,9 +13,11 @@
 		7DCA6DD61AB90880009904FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD51AB90880009904FB /* Images.xcassets */; };
 		7DCA6DD91AB90880009904FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD71AB90880009904FB /* LaunchScreen.xib */; };
 		7DCA6DE51AB90880009904FB /* ___lottery_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DE41AB90880009904FB /* ___lottery_Tests.m */; };
-		7DCA6E1B1AB90F9F009904FB /* JHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E1A1AB90F9F009904FB /* JHTabBar.m */; };
-		7DCA6E1E1AB9101C009904FB /* JHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E1D1AB9101C009904FB /* JHTabBarButton.m */; };
 		7DCA6E241AB918D8009904FB /* JHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E231AB918D8009904FB /* JHTabBarController.m */; };
+		7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E261AB9615B009904FB /* JHTabBar.m */; };
+		7DCA6E2A1AB96168009904FB /* JHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E291AB96168009904FB /* JHTabBarButton.m */; };
+		7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E491AB96230009904FB /* JHTitleButton.m */; };
+		7DCE9EAB1AB982CA00F7FA30 /* JHBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE9EAA1AB982CA00F7FA30 /* JHBuyController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +42,17 @@
 		7DCA6DDE1AB90880009904FB /* 彩票(lottery)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "彩票(lottery)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCA6DE31AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DCA6DE41AB90880009904FB /* ___lottery_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___lottery_Tests.m"; sourceTree = "<group>"; };
-		7DCA6E191AB90F9F009904FB /* JHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTabBar.h; sourceTree = "<group>"; };
-		7DCA6E1A1AB90F9F009904FB /* JHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTabBar.m; sourceTree = "<group>"; };
-		7DCA6E1C1AB9101C009904FB /* JHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTabBarButton.h; sourceTree = "<group>"; };
-		7DCA6E1D1AB9101C009904FB /* JHTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTabBarButton.m; sourceTree = "<group>"; };
 		7DCA6E221AB918D8009904FB /* JHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTabBarController.h; sourceTree = "<group>"; };
 		7DCA6E231AB918D8009904FB /* JHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTabBarController.m; sourceTree = "<group>"; };
+		7DCA6E251AB9615B009904FB /* JHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHTabBar.h; path = "彩票(lottery)/Classes/Hall(购彩大厅)/View/JHTabBar.h"; sourceTree = SOURCE_ROOT; };
+		7DCA6E261AB9615B009904FB /* JHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHTabBar.m; path = "彩票(lottery)/Classes/Hall(购彩大厅)/View/JHTabBar.m"; sourceTree = SOURCE_ROOT; };
+		7DCA6E281AB96168009904FB /* JHTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JHTabBarButton.h; path = "彩票(lottery)/Classes/Hall(购彩大厅)/View/JHTabBarButton.h"; sourceTree = SOURCE_ROOT; };
+		7DCA6E291AB96168009904FB /* JHTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JHTabBarButton.m; path = "彩票(lottery)/Classes/Hall(购彩大厅)/View/JHTabBarButton.m"; sourceTree = SOURCE_ROOT; };
+		7DCA6E481AB96230009904FB /* JHTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTitleButton.h; sourceTree = "<group>"; };
+		7DCA6E491AB96230009904FB /* JHTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTitleButton.m; sourceTree = "<group>"; };
+		7DCE9EA81AB97F4D00F7FA30 /* JHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPrefixHeader.pch; sourceTree = "<group>"; };
+		7DCE9EA91AB982CA00F7FA30 /* JHBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBuyController.h; sourceTree = "<group>"; };
+		7DCE9EAA1AB982CA00F7FA30 /* JHBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBuyController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +110,7 @@
 			children = (
 				7DCA6DC91AB90880009904FB /* Info.plist */,
 				7DCA6DCA1AB90880009904FB /* main.m */,
+				7DCE9EA81AB97F4D00F7FA30 /* JHPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,19 +135,25 @@
 		7DCA6E031AB90E6B009904FB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7DCA6E041AB90E6B009904FB /* Buy(购彩大厅) */,
+				7DCA6E391AB961A7009904FB /* Me(我的彩票) */,
+				7DCA6E3D1AB961A7009904FB /* Other(其它) */,
+				7DCA6E411AB961A7009904FB /* Setting(设置) */,
+				7DCA6E351AB96199009904FB /* Luck(幸运选号) */,
+				7DCA6E2B1AB9618F009904FB /* Buy(合买跟单) */,
+				7DCA6E041AB90E6B009904FB /* Hall(购彩大厅) */,
 				7DCA6E0C1AB90E6B009904FB /* Main(主要) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		7DCA6E041AB90E6B009904FB /* Buy(购彩大厅) */ = {
+		7DCA6E041AB90E6B009904FB /* Hall(购彩大厅) */ = {
 			isa = PBXGroup;
 			children = (
 				7DCA6E051AB90E6B009904FB /* Controller */,
 				7DCA6E061AB90E6B009904FB /* Model */,
 				7DCA6E071AB90E6B009904FB /* View */,
 			);
+			name = "Hall(购彩大厅)";
 			path = "Buy(购彩大厅)";
 			sourceTree = "<group>";
 		};
@@ -160,10 +174,10 @@
 		7DCA6E071AB90E6B009904FB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7DCA6E191AB90F9F009904FB /* JHTabBar.h */,
-				7DCA6E1A1AB90F9F009904FB /* JHTabBar.m */,
-				7DCA6E1C1AB9101C009904FB /* JHTabBarButton.h */,
-				7DCA6E1D1AB9101C009904FB /* JHTabBarButton.m */,
+				7DCA6E281AB96168009904FB /* JHTabBarButton.h */,
+				7DCA6E291AB96168009904FB /* JHTabBarButton.m */,
+				7DCA6E251AB9615B009904FB /* JHTabBar.h */,
+				7DCA6E261AB9615B009904FB /* JHTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +213,165 @@
 				7DCA6E231AB918D8009904FB /* JHTabBarController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DCA6E2B1AB9618F009904FB /* Buy(合买跟单) */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6E2C1AB9618F009904FB /* Controller */,
+				7DCA6E2F1AB9618F009904FB /* Model */,
+				7DCA6E301AB9618F009904FB /* View */,
+			);
+			path = "Buy(合买跟单)";
+			sourceTree = "<group>";
+		};
+		7DCA6E2C1AB9618F009904FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DCE9EA91AB982CA00F7FA30 /* JHBuyController.h */,
+				7DCE9EAA1AB982CA00F7FA30 /* JHBuyController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DCA6E2F1AB9618F009904FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DCA6E301AB9618F009904FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6E481AB96230009904FB /* JHTitleButton.h */,
+				7DCA6E491AB96230009904FB /* JHTitleButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DCA6E351AB96199009904FB /* Luck(幸运选号) */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6E361AB96199009904FB /* Controller */,
+				7DCA6E371AB96199009904FB /* Model */,
+				7DCA6E381AB96199009904FB /* View */,
+			);
+			path = "Luck(幸运选号)";
+			sourceTree = "<group>";
+		};
+		7DCA6E361AB96199009904FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DCA6E371AB96199009904FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DCA6E381AB96199009904FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DCA6E391AB961A7009904FB /* Me(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6E3A1AB961A7009904FB /* Controller */,
+				7DCA6E3B1AB961A7009904FB /* Model */,
+				7DCA6E3C1AB961A7009904FB /* View */,
+			);
+			path = "Me(我的彩票)";
+			sourceTree = "<group>";
+		};
+		7DCA6E3A1AB961A7009904FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DCA6E3B1AB961A7009904FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DCA6E3C1AB961A7009904FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DCA6E3D1AB961A7009904FB /* Other(其它) */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6E3E1AB961A7009904FB /* Controller */,
+				7DCA6E3F1AB961A7009904FB /* Model */,
+				7DCA6E401AB961A7009904FB /* View */,
+			);
+			path = "Other(其它)";
+			sourceTree = "<group>";
+		};
+		7DCA6E3E1AB961A7009904FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DCA6E3F1AB961A7009904FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DCA6E401AB961A7009904FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DCA6E411AB961A7009904FB /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6E421AB961A7009904FB /* Controller */,
+				7DCA6E431AB961A7009904FB /* Model */,
+				7DCA6E441AB961A7009904FB /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		7DCA6E421AB961A7009904FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7DCA6E431AB961A7009904FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DCA6E441AB961A7009904FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +474,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DCA6E1E1AB9101C009904FB /* JHTabBarButton.m in Sources */,
+				7DCA6E2A1AB96168009904FB /* JHTabBarButton.m in Sources */,
+				7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */,
 				7DCA6E241AB918D8009904FB /* JHTabBarController.m in Sources */,
+				7DCE9EAB1AB982CA00F7FA30 /* JHBuyController.m in Sources */,
 				7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */,
 				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
-				7DCA6E1B1AB90F9F009904FB /* JHTabBar.m in Sources */,
+				7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +545,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -410,6 +586,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -427,6 +604,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/彩票(lottery)/JHPrefixHeader.pch";
 				INFOPLIST_FILE = "彩票(lottery)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,6 +616,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/彩票(lottery)/JHPrefixHeader.pch";
 				INFOPLIST_FILE = "彩票(lottery)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

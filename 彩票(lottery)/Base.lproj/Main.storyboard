@@ -76,7 +76,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="我的彩票" id="6Po-2W-4T1"/>
+                    <navigationItem key="navigationItem" title="我的彩票" id="6Po-2W-4T1">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="agt-UX-k6H">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JUC-QY-w0g">
+                                <rect key="frame" x="16" y="11" width="80" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="客服" image="FBMM_Barbutton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="o1d-f3-HUP"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jp-mC-qTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,7 +144,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="购票大厅" id="c8t-5s-hPo"/>
+                    <navigationItem key="navigationItem" title="购票大厅" id="c8t-5s-hPo">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="hn9-Zh-qZa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3yH-01-p0p">
+                                <rect key="frame" x="236" y="11" width="80" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="资讯" image="zixunBarFlat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAm-7m-lW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -177,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="-151" y="1313"/>
         </scene>
-        <!--合买跟单-->
+        <!--Buy Controller-->
         <scene sceneID="H1E-iV-ceh">
             <objects>
-                <viewController id="7Tf-1J-wCP" sceneMemberID="viewController">
+                <viewController id="7Tf-1J-wCP" customClass="JHBuyController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0QF-oC-ntU"/>
                         <viewControllerLayoutGuide type="bottom" id="xWs-UZ-Fo0"/>
@@ -190,7 +213,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="合买跟单" id="nMZ-Ow-Q4A"/>
+                    <navigationItem key="navigationItem" id="nMZ-Ow-Q4A">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hn9-v2-Fvb" customClass="JHTitleButton">
+                            <rect key="frame" x="116" y="11" width="88" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="全部彩种" image="YellowDownArrow">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="titleBtnClick:" destination="7Tf-1J-wCP" eventType="touchUpInside" id="ihM-MO-f29"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azE-oG-OVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,7 +245,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="开奖信息" id="On0-gI-Hmc"/>
+                    <navigationItem key="navigationItem" title="开奖信息" id="On0-gI-Hmc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="tdl-bQ-dQt">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hzX-sG-ZBy">
+                                <rect key="frame" x="218" y="11" width="100" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="开奖信息" image="pushSettings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3iz-k6-Z3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,4 +264,11 @@
             <point key="canvasLocation" x="232" y="168"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FBMM_Barbutton" width="13" height="13"/>
+        <image name="Mylottery_config" width="22" height="22"/>
+        <image name="YellowDownArrow" width="16" height="16"/>
+        <image name="pushSettings" width="14" height="13"/>
+        <image name="zixunBarFlat" width="13" height="11"/>
+    </resources>
 </document>

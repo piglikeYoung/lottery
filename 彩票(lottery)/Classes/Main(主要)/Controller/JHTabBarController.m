@@ -45,7 +45,7 @@
     UINavigationBar *navBar = [UINavigationBar appearance];
     // 3.1设置所有导航条的背景图片
     // 判断当前运行的操作系统的版本
-    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0) {
+    if (iOS7) {
         [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
     } else {
         [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
