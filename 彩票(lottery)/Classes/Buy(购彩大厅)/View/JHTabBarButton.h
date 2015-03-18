@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JHTabBarButton.h
 //  彩票(lottery)
 //
 //  Created by piglikeyoung on 15/3/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JHTabBarButton : UIButton
 
 @end
-
