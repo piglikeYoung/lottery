@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DCA6DCB1AB90880009904FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCA1AB90880009904FB /* main.m */; };
+		7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCD1AB90880009904FB /* AppDelegate.m */; };
+		7DCA6DD11AB90880009904FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD01AB90880009904FB /* ViewController.m */; };
+		7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD21AB90880009904FB /* Main.storyboard */; };
+		7DCA6DD61AB90880009904FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD51AB90880009904FB /* Images.xcassets */; };
+		7DCA6DD91AB90880009904FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD71AB90880009904FB /* LaunchScreen.xib */; };
+		7DCA6DE51AB90880009904FB /* ___lottery_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DE41AB90880009904FB /* ___lottery_Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DCA6DDF1AB90880009904FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DCA6DBD1AB90880009904FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DCA6DC41AB90880009904FB;
+			remoteInfo = "彩票(lottery)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7DCA6DC51AB90880009904FB /* 彩票(lottery).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票(lottery).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DCA6DC91AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCA6DCA1AB90880009904FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DCA6DCC1AB90880009904FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DCA6DCD1AB90880009904FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DCA6DCF1AB90880009904FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DCA6DD01AB90880009904FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DCA6DD31AB90880009904FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DCA6DD51AB90880009904FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7DCA6DD81AB90880009904FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7DCA6DDE1AB90880009904FB /* 彩票(lottery)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "彩票(lottery)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DCA6DE31AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DCA6DE41AB90880009904FB /* ___lottery_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___lottery_Tests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DCA6DC21AB90880009904FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DCA6DDB1AB90880009904FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DCA6DBC1AB90880009904FB = {
+			isa = PBXGroup;
+			children = (
+				7DCA6DC71AB90880009904FB /* 彩票(lottery) */,
+				7DCA6DE11AB90880009904FB /* 彩票(lottery)Tests */,
+				7DCA6DC61AB90880009904FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DCA6DC61AB90880009904FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6DC51AB90880009904FB /* 彩票(lottery).app */,
+				7DCA6DDE1AB90880009904FB /* 彩票(lottery)Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DCA6DC71AB90880009904FB /* 彩票(lottery) */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6DCC1AB90880009904FB /* AppDelegate.h */,
+				7DCA6DCD1AB90880009904FB /* AppDelegate.m */,
+				7DCA6DCF1AB90880009904FB /* ViewController.h */,
+				7DCA6DD01AB90880009904FB /* ViewController.m */,
+				7DCA6DD21AB90880009904FB /* Main.storyboard */,
+				7DCA6DD51AB90880009904FB /* Images.xcassets */,
+				7DCA6DD71AB90880009904FB /* LaunchScreen.xib */,
+				7DCA6DC81AB90880009904FB /* Supporting Files */,
+			);
+			path = "彩票(lottery)";
+			sourceTree = "<group>";
+		};
+		7DCA6DC81AB90880009904FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6DC91AB90880009904FB /* Info.plist */,
+				7DCA6DCA1AB90880009904FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DCA6DE11AB90880009904FB /* 彩票(lottery)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6DE41AB90880009904FB /* ___lottery_Tests.m */,
+				7DCA6DE21AB90880009904FB /* Supporting Files */,
+			);
+			path = "彩票(lottery)Tests";
+			sourceTree = "<group>";
+		};
+		7DCA6DE21AB90880009904FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA6DE31AB90880009904FB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DCA6DC41AB90880009904FB /* 彩票(lottery) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DCA6DE81AB90880009904FB /* Build configuration list for PBXNativeTarget "彩票(lottery)" */;
+			buildPhases = (
+				7DCA6DC11AB90880009904FB /* Sources */,
+				7DCA6DC21AB90880009904FB /* Frameworks */,
+				7DCA6DC31AB90880009904FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "彩票(lottery)";
+			productName = "彩票(lottery)";
+			productReference = 7DCA6DC51AB90880009904FB /* 彩票(lottery).app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DCA6DDD1AB90880009904FB /* 彩票(lottery)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DCA6DEB1AB90880009904FB /* Build configuration list for PBXNativeTarget "彩票(lottery)Tests" */;
+			buildPhases = (
+				7DCA6DDA1AB90880009904FB /* Sources */,
+				7DCA6DDB1AB90880009904FB /* Frameworks */,
+				7DCA6DDC1AB90880009904FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DCA6DE01AB90880009904FB /* PBXTargetDependency */,
+			);
+			name = "彩票(lottery)Tests";
+			productName = "彩票(lottery)Tests";
+			productReference = 7DCA6DDE1AB90880009904FB /* 彩票(lottery)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DCA6DBD1AB90880009904FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = jinheng;
+				TargetAttributes = {
+					7DCA6DC41AB90880009904FB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					7DCA6DDD1AB90880009904FB = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 7DCA6DC41AB90880009904FB;
+					};
+				};
+			};
+			buildConfigurationList = 7DCA6DC01AB90880009904FB /* Build configuration list for PBXProject "彩票(lottery)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DCA6DBC1AB90880009904FB;
+			productRefGroup = 7DCA6DC61AB90880009904FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DCA6DC41AB90880009904FB /* 彩票(lottery) */,
+				7DCA6DDD1AB90880009904FB /* 彩票(lottery)Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DCA6DC31AB90880009904FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */,
+				7DCA6DD91AB90880009904FB /* LaunchScreen.xib in Resources */,
+				7DCA6DD61AB90880009904FB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DCA6DDC1AB90880009904FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DCA6DC11AB90880009904FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DCA6DD11AB90880009904FB /* ViewController.m in Sources */,
+				7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */,
+				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DCA6DDA1AB90880009904FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DCA6DE51AB90880009904FB /* ___lottery_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DCA6DE01AB90880009904FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DCA6DC41AB90880009904FB /* 彩票(lottery) */;
+			targetProxy = 7DCA6DDF1AB90880009904FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DCA6DD21AB90880009904FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DCA6DD31AB90880009904FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DCA6DD71AB90880009904FB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DCA6DD81AB90880009904FB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DCA6DE61AB90880009904FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7DCA6DE71AB90880009904FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DCA6DE91AB90880009904FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "彩票(lottery)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7DCA6DEA1AB90880009904FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "彩票(lottery)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7DCA6DEC1AB90880009904FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "彩票(lottery)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/彩票(lottery).app/彩票(lottery)";
+			};
+			name = Debug;
+		};
+		7DCA6DED1AB90880009904FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "彩票(lottery)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/彩票(lottery).app/彩票(lottery)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DCA6DC01AB90880009904FB /* Build configuration list for PBXProject "彩票(lottery)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DCA6DE61AB90880009904FB /* Debug */,
+				7DCA6DE71AB90880009904FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DCA6DE81AB90880009904FB /* Build configuration list for PBXNativeTarget "彩票(lottery)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DCA6DE91AB90880009904FB /* Debug */,
+				7DCA6DEA1AB90880009904FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7DCA6DEB1AB90880009904FB /* Build configuration list for PBXNativeTarget "彩票(lottery)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DCA6DEC1AB90880009904FB /* Debug */,
+				7DCA6DED1AB90880009904FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DCA6DBD1AB90880009904FB /* Project object */;
+}
