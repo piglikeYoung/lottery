@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7DC3C3791ABA4D7300686A16 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3781ABA4D7300686A16 /* JHNavigationController.m */; };
+		7DC3C37C1ABA68A400686A16 /* JHSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C37B1ABA68A400686A16 /* JHSettingController.m */; };
+		7DC3C37F1ABA6F8900686A16 /* JHProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C37E1ABA6F8900686A16 /* JHProductGroup.m */; };
+		7DC3C3821ABA6FD100686A16 /* JHProductItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3811ABA6FD100686A16 /* JHProductItem.m */; };
+		7DC3C3861ABA79FE00686A16 /* NJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3841ABA79FE00686A16 /* NJTestViewController.m */; };
+		7DC3C3871ABA79FE00686A16 /* NJTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3C3851ABA79FE00686A16 /* NJTestViewController.xib */; };
 		7DCA6DCB1AB90880009904FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCA1AB90880009904FB /* main.m */; };
 		7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCD1AB90880009904FB /* AppDelegate.m */; };
 		7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD21AB90880009904FB /* Main.storyboard */; };
@@ -19,7 +24,7 @@
 		7DCA6E2A1AB96168009904FB /* JHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E291AB96168009904FB /* JHTabBarButton.m */; };
 		7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6E491AB96230009904FB /* JHTitleButton.m */; };
 		7DCE9EAB1AB982CA00F7FA30 /* JHBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE9EAA1AB982CA00F7FA30 /* JHBuyController.m */; };
-		7DCE9EAE1AB99F0B00F7FA30 /* JHSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE9EAD1AB99F0B00F7FA30 /* JHSettingController.m */; };
+		7DCE9EAE1AB99F0B00F7FA30 /* JHLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCE9EAD1AB99F0B00F7FA30 /* JHLoginController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,15 @@
 /* Begin PBXFileReference section */
 		7DC3C3771ABA4D7300686A16 /* JHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
 		7DC3C3781ABA4D7300686A16 /* JHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
+		7DC3C37A1ABA68A400686A16 /* JHSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSettingController.h; sourceTree = "<group>"; };
+		7DC3C37B1ABA68A400686A16 /* JHSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSettingController.m; sourceTree = "<group>"; };
+		7DC3C37D1ABA6F8900686A16 /* JHProductGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProductGroup.h; sourceTree = "<group>"; };
+		7DC3C37E1ABA6F8900686A16 /* JHProductGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProductGroup.m; sourceTree = "<group>"; };
+		7DC3C3801ABA6FD100686A16 /* JHProductItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProductItem.h; sourceTree = "<group>"; };
+		7DC3C3811ABA6FD100686A16 /* JHProductItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProductItem.m; sourceTree = "<group>"; };
+		7DC3C3831ABA79FE00686A16 /* NJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJTestViewController.h; sourceTree = "<group>"; };
+		7DC3C3841ABA79FE00686A16 /* NJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJTestViewController.m; sourceTree = "<group>"; };
+		7DC3C3851ABA79FE00686A16 /* NJTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NJTestViewController.xib; sourceTree = "<group>"; };
 		7DCA6DC51AB90880009904FB /* 彩票(lottery).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票(lottery).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCA6DC91AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DCA6DCA1AB90880009904FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,8 +71,8 @@
 		7DCE9EA81AB97F4D00F7FA30 /* JHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPrefixHeader.pch; sourceTree = "<group>"; };
 		7DCE9EA91AB982CA00F7FA30 /* JHBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBuyController.h; sourceTree = "<group>"; };
 		7DCE9EAA1AB982CA00F7FA30 /* JHBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBuyController.m; sourceTree = "<group>"; };
-		7DCE9EAC1AB99F0B00F7FA30 /* JHSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSettingController.h; sourceTree = "<group>"; };
-		7DCE9EAD1AB99F0B00F7FA30 /* JHSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSettingController.m; sourceTree = "<group>"; };
+		7DCE9EAC1AB99F0B00F7FA30 /* JHLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLoginController.h; sourceTree = "<group>"; };
+		7DCE9EAD1AB99F0B00F7FA30 /* JHLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLoginController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +155,9 @@
 		7DCA6E031AB90E6B009904FB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DC3C3831ABA79FE00686A16 /* NJTestViewController.h */,
+				7DC3C3841ABA79FE00686A16 /* NJTestViewController.m */,
+				7DC3C3851ABA79FE00686A16 /* NJTestViewController.xib */,
 				7DCA6E391AB961A7009904FB /* Me(我的彩票) */,
 				7DCA6E3D1AB961A7009904FB /* Other(其它) */,
 				7DCA6E411AB961A7009904FB /* Setting(设置) */,
@@ -364,8 +381,10 @@
 		7DCA6E421AB961A7009904FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7DCE9EAC1AB99F0B00F7FA30 /* JHSettingController.h */,
-				7DCE9EAD1AB99F0B00F7FA30 /* JHSettingController.m */,
+				7DCE9EAC1AB99F0B00F7FA30 /* JHLoginController.h */,
+				7DCE9EAD1AB99F0B00F7FA30 /* JHLoginController.m */,
+				7DC3C37A1ABA68A400686A16 /* JHSettingController.h */,
+				7DC3C37B1ABA68A400686A16 /* JHSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,6 +392,10 @@
 		7DCA6E431AB961A7009904FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7DC3C37D1ABA6F8900686A16 /* JHProductGroup.h */,
+				7DC3C37E1ABA6F8900686A16 /* JHProductGroup.m */,
+				7DC3C3801ABA6FD100686A16 /* JHProductItem.h */,
+				7DC3C3811ABA6FD100686A16 /* JHProductItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DC3C3871ABA79FE00686A16 /* NJTestViewController.xib in Resources */,
 				7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */,
 				7DCA6DD91AB90880009904FB /* LaunchScreen.xib in Resources */,
 				7DCA6DD61AB90880009904FB /* Images.xcassets in Resources */,
@@ -488,10 +512,14 @@
 				7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */,
 				7DCA6E241AB918D8009904FB /* JHTabBarController.m in Sources */,
 				7DCE9EAB1AB982CA00F7FA30 /* JHBuyController.m in Sources */,
-				7DCE9EAE1AB99F0B00F7FA30 /* JHSettingController.m in Sources */,
+				7DC3C3861ABA79FE00686A16 /* NJTestViewController.m in Sources */,
+				7DCE9EAE1AB99F0B00F7FA30 /* JHLoginController.m in Sources */,
 				7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */,
+				7DC3C37F1ABA6F8900686A16 /* JHProductGroup.m in Sources */,
 				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
+				7DC3C3821ABA6FD100686A16 /* JHProductItem.m in Sources */,
 				7DC3C3791ABA4D7300686A16 /* JHNavigationController.m in Sources */,
+				7DC3C37C1ABA68A400686A16 /* JHSettingController.m in Sources */,
 				7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

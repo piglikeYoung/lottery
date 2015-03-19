@@ -66,7 +66,7 @@
         <!--我的彩票-->
         <scene sceneID="RfF-WJ-7HK">
             <objects>
-                <viewController id="IDh-qm-gBh" customClass="JHSettingController" sceneMemberID="viewController">
+                <viewController id="IDh-qm-gBh" customClass="JHLoginController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fdX-Lm-KeB"/>
                         <viewControllerLayoutGuide type="bottom" id="4Zm-wK-uQQ"/>
@@ -99,7 +99,11 @@
                                 </state>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="o1d-f3-HUP"/>
+                        <barButtonItem key="rightBarButtonItem" image="Mylottery_config" id="o1d-f3-HUP">
+                            <connections>
+                                <action selector="settingBtnOnClick:" destination="IDh-qm-gBh" id="wBJ-aq-bnk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
