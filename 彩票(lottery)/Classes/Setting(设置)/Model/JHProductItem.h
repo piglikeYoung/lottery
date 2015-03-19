@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef  void (^optionBlcok)();
+
 @interface JHProductItem : NSObject
 
 /**
@@ -18,6 +20,9 @@
  *  标题
  */
 @property (nonatomic, copy) NSString *tilte;
+
+// 定义block保存将来要执行的代码
+@property (nonatomic, copy) optionBlcok option;
 
 - (instancetype)initWithIcon:(NSString *)icon title:(NSString *)title;
 

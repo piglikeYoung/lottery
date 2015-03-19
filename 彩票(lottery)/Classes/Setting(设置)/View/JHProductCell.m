@@ -22,7 +22,7 @@
 
 -(UIImageView *)arrowIv
 {
-    if (_arrowIv) {
+    if (_arrowIv == nil) {
         _arrowIv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CellArrow"]];
     }
     

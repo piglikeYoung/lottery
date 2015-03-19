@@ -13,6 +13,7 @@
 #import "JHProductSwitchItem.h"
 #import "JHProductCell.h"
 #import "JHProductArrowItem.h"
+#import "MBProgressHUD+NJ.h"
 
 @interface JHSettingController ()
 
@@ -34,12 +35,21 @@
         group1.items = @[item00,item01];
         
         // 第2组数据
-        JHProductItem *item10 = [[JHProductArrowItem alloc] initWithIcon:@"MorePush" title:@"检查新版本" destClass:[NJTestViewController class]];
-        JHProductItem *item11 = [[JHProductSwitchItem alloc] initWithIcon:@"MorePush" title:@"帮助"];
+        JHProductItem *item10 = [[JHProductItem alloc] initWithIcon:@"MorePush" title:@"检查新版本"];
+        item10.option = ^{
+            // 模拟发送网络请求
+            [MBProgressHUD showMessage:@"正在拼命检查..."];
+            // 2秒之后删除提示
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [MBProgressHUD hideHUD];
+                // 提示没有新版本
+                [MBProgressHUD showSuccess:@"亲~没有新版本"];
+            });
+        };
+        
+        JHProductItem *item11 = [[JHProductArrowItem alloc] initWithIcon:@"MorePush" title:@"帮助" destClass:[NJTestViewController class]];
         
         JHProductGroup *group2 = [[JHProductGroup alloc] init];
-        group2.headerTitle = @"第2组的标题";
-        group2.footerTitle = @"第2组的标题123456";
         group2.items = @[item10,item11];
         
         _datas = [NSMutableArray array];
@@ -89,12 +99,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    // 立即取消选中
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     // 先取出对应组的组模型
     JHProductGroup *g = self.datas[indexPath.section];
     //  从组模型中取出对应行的模型
     JHProductItem *item = g.items[indexPath.row];
-    // 创建目标控制并且添加到栈中
-    if ([item isKindOfClass:[JHProductArrowItem class]]) {
+    // 判断block中是否保存了代码
+    if (item.option != nil) {
+        // 如果保存，就执行block中保存的代码
+        item.option();
+    }else if ([item isKindOfClass:[JHProductArrowItem class]]) {
+        // 创建目标控制并且添加到栈中
         JHProductArrowItem *arrowItem = (JHProductArrowItem *)item;
         UIViewController *vc = [[arrowItem.destVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];

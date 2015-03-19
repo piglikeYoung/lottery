@@ -16,6 +16,9 @@
 		7DC3C38A1ABA814200686A16 /* JHProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3891ABA814200686A16 /* JHProductCell.m */; };
 		7DC3C38D1ABA83C200686A16 /* JHProductArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C38C1ABA83C200686A16 /* JHProductArrowItem.m */; };
 		7DC3C3901ABA843B00686A16 /* JHProductSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C38F1ABA843B00686A16 /* JHProductSwitchItem.m */; };
+		7DC3C3971ABA943600686A16 /* MBProgressHUD+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3931ABA943600686A16 /* MBProgressHUD+NJ.m */; };
+		7DC3C3981ABA943600686A16 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3C3941ABA943600686A16 /* MBProgressHUD.bundle */; };
+		7DC3C3991ABA943600686A16 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3961ABA943600686A16 /* MBProgressHUD.m */; };
 		7DCA6DCB1AB90880009904FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCA1AB90880009904FB /* main.m */; };
 		7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCD1AB90880009904FB /* AppDelegate.m */; };
 		7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD21AB90880009904FB /* Main.storyboard */; };
@@ -58,6 +61,11 @@
 		7DC3C38C1ABA83C200686A16 /* JHProductArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProductArrowItem.m; sourceTree = "<group>"; };
 		7DC3C38E1ABA843B00686A16 /* JHProductSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProductSwitchItem.h; sourceTree = "<group>"; };
 		7DC3C38F1ABA843B00686A16 /* JHProductSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProductSwitchItem.m; sourceTree = "<group>"; };
+		7DC3C3921ABA943600686A16 /* MBProgressHUD+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NJ.h"; sourceTree = "<group>"; };
+		7DC3C3931ABA943600686A16 /* MBProgressHUD+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NJ.m"; sourceTree = "<group>"; };
+		7DC3C3941ABA943600686A16 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		7DC3C3951ABA943600686A16 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		7DC3C3961ABA943600686A16 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		7DCA6DC51AB90880009904FB /* 彩票(lottery).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票(lottery).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCA6DC91AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DCA6DCA1AB90880009904FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +110,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DC3C3911ABA943600686A16 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7DC3C3921ABA943600686A16 /* MBProgressHUD+NJ.h */,
+				7DC3C3931ABA943600686A16 /* MBProgressHUD+NJ.m */,
+				7DC3C3941ABA943600686A16 /* MBProgressHUD.bundle */,
+				7DC3C3951ABA943600686A16 /* MBProgressHUD.h */,
+				7DC3C3961ABA943600686A16 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		7DCA6DBC1AB90880009904FB = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +184,7 @@
 		7DCA6E031AB90E6B009904FB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7DC3C3911ABA943600686A16 /* MBProgressHUD */,
 				7DC3C3831ABA79FE00686A16 /* NJTestViewController.h */,
 				7DC3C3841ABA79FE00686A16 /* NJTestViewController.m */,
 				7DC3C3851ABA79FE00686A16 /* NJTestViewController.xib */,
@@ -504,6 +525,7 @@
 			files = (
 				7DC3C3871ABA79FE00686A16 /* NJTestViewController.xib in Resources */,
 				7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */,
+				7DC3C3981ABA943600686A16 /* MBProgressHUD.bundle in Resources */,
 				7DCA6DD91AB90880009904FB /* LaunchScreen.xib in Resources */,
 				7DCA6DD61AB90880009904FB /* Images.xcassets in Resources */,
 			);
@@ -536,7 +558,9 @@
 				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
 				7DC3C3821ABA6FD100686A16 /* JHProductItem.m in Sources */,
 				7DC3C3791ABA4D7300686A16 /* JHNavigationController.m in Sources */,
+				7DC3C3991ABA943600686A16 /* MBProgressHUD.m in Sources */,
 				7DC3C37C1ABA68A400686A16 /* JHSettingController.m in Sources */,
+				7DC3C3971ABA943600686A16 /* MBProgressHUD+NJ.m in Sources */,
 				7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */,
 				7DC3C38A1ABA814200686A16 /* JHProductCell.m in Sources */,
 			);
