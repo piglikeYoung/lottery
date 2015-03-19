@@ -25,12 +25,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJa-I6-QJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-527" y="168"/>
+            <point key="canvasLocation" x="-1221" y="148"/>
         </scene>
         <!--Item-->
         <scene sceneID="94x-uq-woQ">
             <objects>
-                <navigationController id="9AQ-fQ-JrH" sceneMemberID="viewController">
+                <navigationController id="9AQ-fQ-JrH" customClass="JHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="myb-tD-Aue"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3yv-hL-0Dk">
@@ -48,7 +48,7 @@
         <!--Item-->
         <scene sceneID="IlD-YM-BWG">
             <objects>
-                <navigationController id="nXG-am-GsP" sceneMemberID="viewController">
+                <navigationController id="nXG-am-GsP" customClass="JHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="sFw-T0-OP6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3k1-7q-P5x">
@@ -113,7 +113,7 @@
         <!--Item-->
         <scene sceneID="P3Q-R5-DJI">
             <objects>
-                <navigationController id="oys-7v-OOA" sceneMemberID="viewController">
+                <navigationController id="oys-7v-OOA" customClass="JHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="qJQ-zd-AbZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tTX-ox-3Uq">
@@ -131,7 +131,7 @@
         <!--Item-->
         <scene sceneID="LJr-dp-knN">
             <objects>
-                <navigationController id="JNc-lR-EOJ" sceneMemberID="viewController">
+                <navigationController id="JNc-lR-EOJ" customClass="JHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="jxd-q0-dpt"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yn5-P3-rvy">
@@ -145,6 +145,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXf-xR-qOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-151" y="-416"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LQM-Jh-vrD">
+            <objects>
+                <viewController id="vFa-9W-zVR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9f9-QF-D4K"/>
+                        <viewControllerLayoutGuide type="bottom" id="3SV-Ou-cQT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iAJ-m6-WXv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oDT-8e-Bkd"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7A-R7-MW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-521" y="-1543"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="cwq-v3-drq">
+            <objects>
+                <tableViewController id="PWs-sF-gSH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="j8K-XE-3Ap">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FRM-kk-AZa">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FRM-kk-AZa" id="y9b-vK-Tzp">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PWs-sF-gSH" id="Lld-gL-Ps2"/>
+                            <outlet property="delegate" destination="PWs-sF-gSH" id="EU2-16-UOJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Woe-3p-qoD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvK-fJ-rVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="-1563"/>
         </scene>
         <!--购票大厅-->
         <scene sceneID="ZiB-XW-Vam">
@@ -168,6 +216,9 @@
                                 <state key="normal" title="资讯" image="zixunBarFlat">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vFa-9W-zVR" kind="push" id="PEZ-QW-qfH"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -180,7 +231,7 @@
         <!--Item-->
         <scene sceneID="3ud-67-3Ox">
             <objects>
-                <navigationController id="WcO-ra-48Q" sceneMemberID="viewController">
+                <navigationController id="WcO-ra-48Q" customClass="JHNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Wzk-mZ-X9h"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KeQ-2U-GjD">
@@ -226,6 +277,18 @@
                     <view key="view" contentMode="scaleToFill" id="vfd-LD-Qjl">
                         <rect key="frame" x="0.0" y="64" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-dl-cr3">
+                                <rect key="frame" x="137" y="264" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PWs-sF-gSH" kind="push" id="XjZ-UL-G4Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="nMZ-Ow-Q4A">

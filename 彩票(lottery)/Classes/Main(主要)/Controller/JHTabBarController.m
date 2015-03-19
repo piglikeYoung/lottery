@@ -21,10 +21,14 @@
     
     // 1.创建自定义的TabBar
     JHTabBar *myTabBar = [[JHTabBar alloc] init];
-    myTabBar.frame = self.tabBar.frame;
+//    myTabBar.frame = self.tabBar.frame;
+    // 特别注意:此处frame的Y值有问题，系统的TabBar在底部，Y值是400多，自定义TabBar放入父类的Y值应该是0，所以用bounds
+    myTabBar.frame = self.tabBar.bounds;
     myTabBar.delegate = self;
     
-    [self.view addSubview:myTabBar];
+//    [self.view addSubview:myTabBar];
+    // 将自定义TabBar当作子类传入系统的TabBar，跳转的时候隐藏父类，子类也会跟着隐藏
+    [self.tabBar addSubview:myTabBar];
     
     // 1.1根据系统子控制器的个数来创建自定义TabBar上按钮的个数
     for (int i = 0; i < self.viewControllers.count; i++) {
@@ -38,24 +42,8 @@
     
         
     // 2.删除系统自带的TabBar
-    [self.tabBar removeFromSuperview];
+//    [self.tabBar removeFromSuperview];
     
-    // 3.设置导航条的主题
-    // 如果要同时设置很多UINavigationBar的样式, 可以通过设置UINavigationBar的主题的方式来设置以便简化代码
-    UINavigationBar *navBar = [UINavigationBar appearance];
-    // 3.1设置所有导航条的背景图片
-    // 判断当前运行的操作系统的版本
-    if (iOS7) {
-        [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
-    } else {
-        [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
-    }
-    
-    // 3.2设置所有导航条的标题颜色
-    NSMutableDictionary *md = [NSMutableDictionary dictionary];
-    md[NSFontAttributeName] = [UIFont systemFontOfSize:16];
-    md[NSForegroundColorAttributeName] = [UIColor whiteColor];
-    [navBar setTitleTextAttributes:md];
 }
 
 #pragma mark - JHTabBarDelegate

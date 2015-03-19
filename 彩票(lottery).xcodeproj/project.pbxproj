@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DC3C3791ABA4D7300686A16 /* JHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3781ABA4D7300686A16 /* JHNavigationController.m */; };
 		7DCA6DCB1AB90880009904FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCA1AB90880009904FB /* main.m */; };
 		7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCD1AB90880009904FB /* AppDelegate.m */; };
 		7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD21AB90880009904FB /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DC3C3771ABA4D7300686A16 /* JHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHNavigationController.h; sourceTree = "<group>"; };
+		7DC3C3781ABA4D7300686A16 /* JHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHNavigationController.m; sourceTree = "<group>"; };
 		7DCA6DC51AB90880009904FB /* 彩票(lottery).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票(lottery).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCA6DC91AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DCA6DCA1AB90880009904FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 			children = (
 				7DCA6E221AB918D8009904FB /* JHTabBarController.h */,
 				7DCA6E231AB918D8009904FB /* JHTabBarController.m */,
+				7DC3C3771ABA4D7300686A16 /* JHNavigationController.h */,
+				7DC3C3781ABA4D7300686A16 /* JHNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 				7DCE9EAE1AB99F0B00F7FA30 /* JHSettingController.m in Sources */,
 				7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */,
 				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
+				7DC3C3791ABA4D7300686A16 /* JHNavigationController.m in Sources */,
 				7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
