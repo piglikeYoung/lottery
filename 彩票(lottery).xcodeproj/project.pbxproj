@@ -13,6 +13,9 @@
 		7DC3C3821ABA6FD100686A16 /* JHProductItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3811ABA6FD100686A16 /* JHProductItem.m */; };
 		7DC3C3861ABA79FE00686A16 /* NJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3841ABA79FE00686A16 /* NJTestViewController.m */; };
 		7DC3C3871ABA79FE00686A16 /* NJTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3C3851ABA79FE00686A16 /* NJTestViewController.xib */; };
+		7DC3C38A1ABA814200686A16 /* JHProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C3891ABA814200686A16 /* JHProductCell.m */; };
+		7DC3C38D1ABA83C200686A16 /* JHProductArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C38C1ABA83C200686A16 /* JHProductArrowItem.m */; };
+		7DC3C3901ABA843B00686A16 /* JHProductSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC3C38F1ABA843B00686A16 /* JHProductSwitchItem.m */; };
 		7DCA6DCB1AB90880009904FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCA1AB90880009904FB /* main.m */; };
 		7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCD1AB90880009904FB /* AppDelegate.m */; };
 		7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD21AB90880009904FB /* Main.storyboard */; };
@@ -49,6 +52,12 @@
 		7DC3C3831ABA79FE00686A16 /* NJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJTestViewController.h; sourceTree = "<group>"; };
 		7DC3C3841ABA79FE00686A16 /* NJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJTestViewController.m; sourceTree = "<group>"; };
 		7DC3C3851ABA79FE00686A16 /* NJTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NJTestViewController.xib; sourceTree = "<group>"; };
+		7DC3C3881ABA814200686A16 /* JHProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProductCell.h; sourceTree = "<group>"; };
+		7DC3C3891ABA814200686A16 /* JHProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProductCell.m; sourceTree = "<group>"; };
+		7DC3C38B1ABA83C200686A16 /* JHProductArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProductArrowItem.h; sourceTree = "<group>"; };
+		7DC3C38C1ABA83C200686A16 /* JHProductArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProductArrowItem.m; sourceTree = "<group>"; };
+		7DC3C38E1ABA843B00686A16 /* JHProductSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHProductSwitchItem.h; sourceTree = "<group>"; };
+		7DC3C38F1ABA843B00686A16 /* JHProductSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHProductSwitchItem.m; sourceTree = "<group>"; };
 		7DCA6DC51AB90880009904FB /* 彩票(lottery).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票(lottery).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCA6DC91AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DCA6DCA1AB90880009904FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -396,6 +405,10 @@
 				7DC3C37E1ABA6F8900686A16 /* JHProductGroup.m */,
 				7DC3C3801ABA6FD100686A16 /* JHProductItem.h */,
 				7DC3C3811ABA6FD100686A16 /* JHProductItem.m */,
+				7DC3C38B1ABA83C200686A16 /* JHProductArrowItem.h */,
+				7DC3C38C1ABA83C200686A16 /* JHProductArrowItem.m */,
+				7DC3C38E1ABA843B00686A16 /* JHProductSwitchItem.h */,
+				7DC3C38F1ABA843B00686A16 /* JHProductSwitchItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +416,8 @@
 		7DCA6E441AB961A7009904FB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7DC3C3881ABA814200686A16 /* JHProductCell.h */,
+				7DC3C3891ABA814200686A16 /* JHProductCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,15 +527,18 @@
 				7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */,
 				7DCA6E241AB918D8009904FB /* JHTabBarController.m in Sources */,
 				7DCE9EAB1AB982CA00F7FA30 /* JHBuyController.m in Sources */,
+				7DC3C3901ABA843B00686A16 /* JHProductSwitchItem.m in Sources */,
 				7DC3C3861ABA79FE00686A16 /* NJTestViewController.m in Sources */,
 				7DCE9EAE1AB99F0B00F7FA30 /* JHLoginController.m in Sources */,
 				7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */,
+				7DC3C38D1ABA83C200686A16 /* JHProductArrowItem.m in Sources */,
 				7DC3C37F1ABA6F8900686A16 /* JHProductGroup.m in Sources */,
 				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
 				7DC3C3821ABA6FD100686A16 /* JHProductItem.m in Sources */,
 				7DC3C3791ABA4D7300686A16 /* JHNavigationController.m in Sources */,
 				7DC3C37C1ABA68A400686A16 /* JHSettingController.m in Sources */,
 				7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */,
+				7DC3C38A1ABA814200686A16 /* JHProductCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

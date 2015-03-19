@@ -10,12 +10,11 @@
 
 @implementation JHProductItem
 
--(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title destClass:(Class)destVc
+-(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title
 {
     if (self = [super init]) {
         self.icon = icon;
         self.tilte = title;
-        self.destVC = destVc ;
     }
     
     return self;

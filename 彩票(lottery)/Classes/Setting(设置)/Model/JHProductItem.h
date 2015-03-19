@@ -18,12 +18,7 @@
  *  标题
  */
 @property (nonatomic, copy) NSString *tilte;
-/**
- *  目标控制器
- */
-@property (nonatomic, assign) Class destVC;
 
-
-- (instancetype)initWithIcon:(NSString *)icon title:(NSString *)title destClass:(Class)destVc;
+- (instancetype)initWithIcon:(NSString *)icon title:(NSString *)title;
 
 @end
