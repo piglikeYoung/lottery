@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class JHProductItem;
+@class JHSettingItem;
 
-@interface JHProductCell : UITableViewCell
+@interface JHSettingCell : UITableViewCell
 
-@property (nonatomic, strong) JHProductItem *item;
+@property (nonatomic, strong) JHSettingItem *item;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 

@@ -6,19 +6,19 @@
 //  Copyright (c) 2015年 jinheng. All rights reserved.
 //
 
-#import "JHProductCell.h"
-#import "JHProductItem.h"
-#import "JHProductArrowItem.h"
-#import "JHProductSwitchItem.h"
+#import "JHSettingCell.h"
+#import "JHSettingItem.h"
+#import "JHSettingArrowItem.h"
+#import "JHSettingSwitchItem.h"
 
-@interface JHProductCell()
+@interface JHSettingCell()
 
 @property (nonatomic, strong) UIImageView *arrowIv;
 @property (nonatomic, strong) UISwitch *switchBtn;
 
 @end
 
-@implementation JHProductCell
+@implementation JHSettingCell
 
 -(UIImageView *)arrowIv
 {
@@ -41,15 +41,15 @@
 +(instancetype)cellWithTableView:(UITableView *)tableView
 {
     static NSString *identifier = @"cell";
-    JHProductCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    JHSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
-        cell = [[JHProductCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[JHSettingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
     return cell;
 }
 
--(void)setItem:(JHProductItem *)item
+-(void)setItem:(JHSettingItem *)item
 {
     _item = item;
     
@@ -58,10 +58,10 @@
     self.imageView.image = [UIImage imageNamed:_item.icon];
     
     // 设置辅助视图
-    if ([_item isKindOfClass:[JHProductArrowItem class]]) {
+    if ([_item isKindOfClass:[JHSettingArrowItem class]]) {
         // 利用懒加载创建，因为这个set方法频繁调用，不使用懒加载就会频繁的创建控件，但是控件是一样的，所以通过懒加载来一次创建，多次使用
         self.accessoryView = self.arrowIv;
-    }else if ([_item isKindOfClass:[JHProductSwitchItem class]]){
+    }else if ([_item isKindOfClass:[JHSettingSwitchItem class]]){
         self.accessoryView = self.switchBtn;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
     }else{

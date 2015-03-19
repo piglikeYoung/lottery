@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JHProductGroup : NSObject
+@interface JHSettingGroup : NSObject
 
 /**
  *   头部标题

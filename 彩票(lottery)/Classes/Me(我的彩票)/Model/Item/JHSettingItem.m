@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 jinheng. All rights reserved.
 //
 
-#import "JHProductItem.h"
+#import "JHSettingItem.h"
 
-@implementation JHProductItem
+@implementation JHSettingItem
 
 -(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title
 {

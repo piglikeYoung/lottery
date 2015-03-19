@@ -10,7 +10,7 @@
 
 typedef  void (^optionBlcok)();
 
-@interface JHProductItem : NSObject
+@interface JHSettingItem : NSObject
 
 /**
  *  图标

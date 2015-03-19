@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 jinheng. All rights reserved.
 //
 
-#import "JHProductArrowItem.h"
+#import "JHSettingArrowItem.h"
 
-@implementation JHProductArrowItem
+@implementation JHSettingArrowItem
 
 -(instancetype)initWithIcon:(NSString *)icon title:(NSString *)title destClass:(Class)destVc
 {

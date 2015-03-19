@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 jinheng. All rights reserved.
 //
 
-#import "JHProductItem.h"
+#import "JHSettingItem.h"
 
-@interface JHProductArrowItem : JHProductItem
+@interface JHSettingArrowItem : JHSettingItem
 
 /**
  *  目标控制器
