@@ -259,7 +259,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="幸运广场" id="Aug-of-Gv3"/>
+                    <navigationItem key="navigationItem" title="幸运广场" id="Aug-of-Gv3">
+                        <barButtonItem key="leftBarButtonItem" title="测试" id="IiE-zf-tGT"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8PQ-ZH-QBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
