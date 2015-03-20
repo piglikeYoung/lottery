@@ -34,9 +34,22 @@
 {
     if (_switchBtn == nil) {
         _switchBtn = [[UISwitch alloc] init];
+        
+        // 监听开关的改变
+        [_switchBtn addTarget:self action:@selector(switchBtnChagne) forControlEvents:UIControlEventValueChanged];
     }
     
     return _switchBtn;
+}
+
+// 偏好设置switch的状态
+- (void)switchBtnChagne
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setBool:self.switchBtn.isOn forKey:self.item.tilte];
+    
+    [defaults synchronize];
 }
 
 - (UILabel *)labelView
@@ -74,7 +87,13 @@
         self.accessoryView = self.arrowIv;
     }else if ([_item isKindOfClass:[JHSettingSwitchItem class]]){
         self.accessoryView = self.switchBtn;
+        
+        // 恢复存储状态
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        self.switchBtn.on = [defaults boolForKey:self.item.tilte];
+        // 设置没有选中样式
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
     }else if ([_item isKindOfClass:[JHSettingLabelItem class]]){
         self.accessoryView = self.labelView;
     }else{

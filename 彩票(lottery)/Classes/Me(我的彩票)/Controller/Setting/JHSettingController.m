@@ -10,6 +10,7 @@
 #import "JHPushNoticeController.h"
 #import "MBProgressHUD+NJ.h"
 #import "JHProductViewController.h"
+#import "JHHelpViewController.h"
 
 @interface JHSettingController ()
 
@@ -60,7 +61,7 @@
     };
     
     // 2.2.帮助
-    JHSettingArrowItem *help = [[JHSettingArrowItem alloc ]initWithIcon:@"MoreHelp" title:@"帮助"];
+    JHSettingArrowItem *help = [[JHSettingArrowItem alloc ]initWithIcon:@"MoreHelp" title:@"帮助" destClass:[JHHelpViewController class]];
     
     
     // 2.3.分享
