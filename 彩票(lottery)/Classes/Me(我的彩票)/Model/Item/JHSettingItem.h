@@ -21,6 +21,11 @@ typedef  void (^optionBlcok)();
  */
 @property (nonatomic, copy) NSString *tilte;
 
+/**
+ *  记录客服电话
+ */
+@property (nonatomic, copy) NSString *subTitle;
+
 // 定义block保存将来要执行的代码
 @property (nonatomic, copy) optionBlcok option;
 

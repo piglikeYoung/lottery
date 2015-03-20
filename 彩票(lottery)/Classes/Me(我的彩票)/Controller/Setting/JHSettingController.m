@@ -11,6 +11,8 @@
 #import "MBProgressHUD+NJ.h"
 #import "JHProductViewController.h"
 #import "JHHelpViewController.h"
+#import "JHAboutViewController.h"
+#import "JHShareViewController.h"
 
 @interface JHSettingController ()
 
@@ -65,7 +67,7 @@
     
     
     // 2.3.分享
-    JHSettingArrowItem *share = [[JHSettingArrowItem alloc ]initWithIcon:@"MoreShare" title:@"分享"];
+    JHSettingArrowItem *share = [[JHSettingArrowItem alloc ]initWithIcon:@"MoreShare" title:@"分享"destClass:[JHShareViewController class]];
     
     
     // 2.4.查看消息
@@ -75,7 +77,7 @@
     JHSettingArrowItem *product = [[JHSettingArrowItem alloc ]initWithIcon:@"MoreNetease" title:@"产品推荐" destClass: [JHProductViewController class]];
     
     // 2.6.关于
-    JHSettingArrowItem *about = [[JHSettingArrowItem alloc ]initWithIcon:@"MoreAbout" title:@"关于"];
+    JHSettingArrowItem *about = [[JHSettingArrowItem alloc ]initWithIcon:@"MoreAbout" title:@"关于"destClass : [JHAboutViewController class]];
     
     JHSettingGroup *group = [[JHSettingGroup alloc] init ];
     group.items = @[update, help, share, msg, product, about];

@@ -64,6 +64,10 @@
 		7DCA1A011ABBBC2B006B39E1 /* JHHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA1A001ABBBC2B006B39E1 /* JHHelp.m */; };
 		7DCA1A081ABBC954006B39E1 /* JHHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA1A071ABBC954006B39E1 /* JHHtmlViewController.m */; };
 		7DCA1A0B1ABBC9F6006B39E1 /* JHHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA1A0A1ABBC9F6006B39E1 /* JHHelpViewController.m */; };
+		7DCA1A0E1ABBE07E006B39E1 /* JHAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA1A0D1ABBE07E006B39E1 /* JHAboutViewController.m */; };
+		7DCA1A121ABBE0F2006B39E1 /* JHAboutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA1A111ABBE0F2006B39E1 /* JHAboutHeaderView.m */; };
+		7DCA1A141ABBE125006B39E1 /* JHAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA1A131ABBE125006B39E1 /* JHAboutHeaderView.xib */; };
+		7DCA1A171ABBEBA1006B39E1 /* JHShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA1A161ABBEBA1006B39E1 /* JHShareViewController.m */; };
 		7DCA6DCB1AB90880009904FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCA1AB90880009904FB /* main.m */; };
 		7DCA6DCE1AB90880009904FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA6DCD1AB90880009904FB /* AppDelegate.m */; };
 		7DCA6DD41AB90880009904FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DCA6DD21AB90880009904FB /* Main.storyboard */; };
@@ -168,6 +172,13 @@
 		7DCA1A071ABBC954006B39E1 /* JHHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHtmlViewController.m; sourceTree = "<group>"; };
 		7DCA1A091ABBC9F6006B39E1 /* JHHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHelpViewController.h; sourceTree = "<group>"; };
 		7DCA1A0A1ABBC9F6006B39E1 /* JHHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHelpViewController.m; sourceTree = "<group>"; };
+		7DCA1A0C1ABBE07E006B39E1 /* JHAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAboutViewController.h; sourceTree = "<group>"; };
+		7DCA1A0D1ABBE07E006B39E1 /* JHAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAboutViewController.m; sourceTree = "<group>"; };
+		7DCA1A101ABBE0F2006B39E1 /* JHAboutHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAboutHeaderView.h; sourceTree = "<group>"; };
+		7DCA1A111ABBE0F2006B39E1 /* JHAboutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAboutHeaderView.m; sourceTree = "<group>"; };
+		7DCA1A131ABBE125006B39E1 /* JHAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHAboutHeaderView.xib; sourceTree = "<group>"; };
+		7DCA1A151ABBEBA1006B39E1 /* JHShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHShareViewController.h; sourceTree = "<group>"; };
+		7DCA1A161ABBEBA1006B39E1 /* JHShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHShareViewController.m; sourceTree = "<group>"; };
 		7DCA6DC51AB90880009904FB /* 彩票(lottery).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票(lottery).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCA6DC91AB90880009904FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DCA6DCA1AB90880009904FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -315,6 +326,7 @@
 		7DC3C3A91ABAB0FB00686A16 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7DCA1A0F1ABBE0C3006B39E1 /* About */,
 				7DBF5AC31ABAE070003EF614 /* Setting */,
 				7DBF5AC21ABAE068003EF614 /* Item */,
 			);
@@ -342,6 +354,8 @@
 		7DCA19A81ABB9AF3006B39E1 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				7DCA1A0C1ABBE07E006B39E1 /* JHAboutViewController.h */,
+				7DCA1A0D1ABBE07E006B39E1 /* JHAboutViewController.m */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -364,6 +378,8 @@
 		7DCA19AB1ABB9B22006B39E1 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				7DCA1A151ABBEBA1006B39E1 /* JHShareViewController.h */,
+				7DCA1A161ABBEBA1006B39E1 /* JHShareViewController.m */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -422,6 +438,16 @@
 				7DCA1A0A1ABBC9F6006B39E1 /* JHHelpViewController.m */,
 			);
 			path = Help;
+			sourceTree = "<group>";
+		};
+		7DCA1A0F1ABBE0C3006B39E1 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				7DCA1A101ABBE0F2006B39E1 /* JHAboutHeaderView.h */,
+				7DCA1A111ABBE0F2006B39E1 /* JHAboutHeaderView.m */,
+				7DCA1A131ABBE125006B39E1 /* JHAboutHeaderView.xib */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		7DCA6DBC1AB90880009904FB = {
@@ -782,6 +808,7 @@
 				7DCA19F51ABBBB90006B39E1 /* qlc_howto.html in Resources */,
 				7DCA19EE1ABBBB90006B39E1 /* k2_howto.html in Resources */,
 				7DCA19F61ABBBB90006B39E1 /* qxc_howto.html in Resources */,
+				7DCA1A141ABBE125006B39E1 /* JHAboutHeaderView.xib in Resources */,
 				7DCA19FD1ABBBB90006B39E1 /* znzh.html in Resources */,
 				7DCA19FA1ABBBB90006B39E1 /* ssq_howto.html in Resources */,
 				7DCA19FC1ABBBB90006B39E1 /* y11_howto.html in Resources */,
@@ -816,6 +843,7 @@
 				7DCA6E4A1AB96230009904FB /* JHTitleButton.m in Sources */,
 				7DCA1A081ABBC954006B39E1 /* JHHtmlViewController.m in Sources */,
 				7DCA6E241AB918D8009904FB /* JHTabBarController.m in Sources */,
+				7DCA1A171ABBEBA1006B39E1 /* JHShareViewController.m in Sources */,
 				7DCA19A71ABB9AE7006B39E1 /* JHProductViewController.m in Sources */,
 				7DBF5AD61ABAE13D003EF614 /* JHProductItem.m in Sources */,
 				7DCA19BA1ABBA46C006B39E1 /* JHScoreTimeViewController.m in Sources */,
@@ -828,6 +856,7 @@
 				7DCA6DCB1AB90880009904FB /* main.m in Sources */,
 				7DC3C3791ABA4D7300686A16 /* JHNavigationController.m in Sources */,
 				7DBF5AC91ABAE0C5003EF614 /* JHSettingGroup.m in Sources */,
+				7DCA1A0E1ABBE07E006B39E1 /* JHAboutViewController.m in Sources */,
 				7DBF5AC61ABAE0AE003EF614 /* JHSettingCell.m in Sources */,
 				7DC3C3991ABA943600686A16 /* MBProgressHUD.m in Sources */,
 				7DCA19BD1ABBA52B006B39E1 /* JHSettingLabelItem.m in Sources */,
@@ -835,6 +864,7 @@
 				7DBF5AD01ABAE0DB003EF614 /* JHSettingArrowItem.m in Sources */,
 				7DCA19B41ABBA377006B39E1 /* JHAwardAnimationViewController.m in Sources */,
 				7DCA6E271AB9615B009904FB /* JHTabBar.m in Sources */,
+				7DCA1A121ABBE0F2006B39E1 /* JHAboutHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

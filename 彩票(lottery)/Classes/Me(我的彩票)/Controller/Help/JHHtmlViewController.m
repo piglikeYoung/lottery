@@ -48,7 +48,7 @@
 // 网页加载完毕之后调用
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    // 当网页加载完毕之后执行javascript代码,跳转到对应的位置
+    // 当网页加载完毕之后执行javascript代码,跳转到对应的位置，比如 如何领奖，如何充值
 
     // 1.生成对应的javascript代码
     NSString *jsStr = [NSString stringWithFormat:@"window.location.href = '#%@';",self.helpModel.tagId];

@@ -67,7 +67,7 @@
     static NSString *identifier = @"cell";
     JHSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
-        cell = [[JHSettingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[JHSettingCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
     
     return cell;
@@ -85,6 +85,8 @@
     if ([_item isKindOfClass:[JHSettingArrowItem class]]) {
         // 利用懒加载创建，因为这个set方法频繁调用，不使用懒加载就会频繁的创建控件，但是控件是一样的，所以通过懒加载来一次创建，多次使用
         self.accessoryView = self.arrowIv;
+        self.detailTextLabel.text = item.subTitle;
+        
     }else if ([_item isKindOfClass:[JHSettingSwitchItem class]]){
         self.accessoryView = self.switchBtn;
         
