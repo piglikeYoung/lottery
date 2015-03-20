@@ -35,6 +35,18 @@
     return [super initWithStyle:UITableViewStyleGrouped];
 }
 
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // 设置tabView的背景颜色,用于适配iOS6、7
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
+    // 清空系统的backgroundView
+    self.tableView.backgroundView = nil;
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -59,6 +71,11 @@
     JHSettingItem *item = g.items[indexPath.row];
     
     cell.item = item;
+    
+    // 判断是否是最后一个cell, 如果是最后一个cell就隐藏分割线
+    if (indexPath.row == (g.items.count - 1)) {
+        cell.hiddenLastDivider = YES;
+    }
     
     // 3.返回cell
     return cell;

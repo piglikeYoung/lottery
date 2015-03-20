@@ -13,6 +13,10 @@
 
 @property (nonatomic, strong) JHSettingItem *item;
 
+@property (nonatomic, assign) BOOL hiddenLastDivider;
+
 + (instancetype)cellWithTableView:(UITableView *)tableView;
+
+
 
 @end
