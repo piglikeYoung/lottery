@@ -120,8 +120,31 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // 1.获取点击的那一个item对应的模型
+//    JHProduct *product = self.products[indexPath.item];
+//    NSLog(@"%@",  product.title);
+    
+    // 协议头://地址/路径
+    // lnj://ios.itcast.cn
+    // lnj://www.itheima.com
+    //    NSURL *url = [NSURL URLWithString:@"lnj://ios.itcast.cn"];
+    //    [[UIApplication sharedApplication] openURL:url];
+    
+    
+    // 1.根据模型拼接url
     JHProduct *product = self.products[indexPath.item];
-    NSLog(@"%@",  product.title);
+    // "newsapp://com.netease.news"
+    NSString *path = [NSString stringWithFormat:@"%@://%@", product.scheme, product.identifier];
+    NSURL *url = [NSURL URLWithString:path];
+    // 2.判断能否打开应用
+    UIApplication *app = [UIApplication sharedApplication];
+    if ([app canOpenURL:url]) {
+        // 2.打开应用程序
+        [app openURL:url];
+    }else
+    {   // 没有安装应用程序就跳转到AppStore
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString: product.url]];
+    }
+
 }
 
 

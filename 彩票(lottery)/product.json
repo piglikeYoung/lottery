@@ -1,10 +1,10 @@
 [
       {
             "title": "网易电影票", 
-            "id": "com.netease.movie",
+            "id": "www.yjh.com",
             "url": "http://itunes.apple.com/app/id583784224?mt=8", 
             "icon": "movie.png", 
-            "customUrl": "movieticket163"
+            "customUrl": "yjh"
       },
       {
             "title": "网易新闻", 
