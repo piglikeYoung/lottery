@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JHSettingController : UITableViewController
+
+@interface JHSettingController : JHBaseViewController
 
 @end

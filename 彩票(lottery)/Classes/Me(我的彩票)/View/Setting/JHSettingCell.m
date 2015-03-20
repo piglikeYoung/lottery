@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) UIImageView *arrowIv;
 @property (nonatomic, strong) UISwitch *switchBtn;
+@property (strong , nonatomic) UILabel *labelView;
 
 @end
 
@@ -36,6 +37,16 @@
     }
     
     return _switchBtn;
+}
+
+- (UILabel *)labelView
+{
+    if (_labelView == nil) {
+        _labelView = [[UILabel alloc] init];
+        _labelView.frame = CGRectMake(250, 0, 100, 44);
+        _labelView.backgroundColor = [UIColor redColor];
+    }
+    return _labelView;
 }
 
 +(instancetype)cellWithTableView:(UITableView *)tableView
@@ -64,6 +75,8 @@
     }else if ([_item isKindOfClass:[JHSettingSwitchItem class]]){
         self.accessoryView = self.switchBtn;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }else if ([_item isKindOfClass:[JHSettingLabelItem class]]){
+        self.accessoryView = self.labelView;
     }else{
         self.accessoryView = nil;
     }
