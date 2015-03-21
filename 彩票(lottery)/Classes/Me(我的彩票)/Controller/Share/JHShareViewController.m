@@ -11,12 +11,22 @@
 
 @interface JHShareViewController ()<MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
+@property (nonatomic, assign) int age;
+
 @end
 
 @implementation JHShareViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 要将self变成弱引用，这样在block代码块设置代理和调用self的时候不会强引用控制器，让控制器能够被释放
+//    __unsafe_unretained JHShareViewController *unsafeSelf = self;
+    //    __weak JHShareViewController *unsafeSelf = self;
+    // 区别：__weak当对象释放后会自动设置为nil，而__unsafe_unretained不会
+    
+    // 这个写法等同于上面的__weak，可直接拷贝到别的类中
+    __weak typeof(self) unsafeSelf = self;
         
     // 1.1.新浪微博
     JHSettingArrowItem *weibo = [[JHSettingArrowItem alloc] initWithIcon:@"WeiboSina" title:@"新浪微博"];
@@ -41,9 +51,9 @@
         // 设置收件人列表
         vc.recipients = @[@"10010"];
         // 设置代理
-        vc.messageComposeDelegate = self;
+        vc.messageComposeDelegate = unsafeSelf;
         // 显示控制器
-        [self presentViewController:vc animated:YES completion:nil];
+        [unsafeSelf presentViewController:vc animated:YES completion:nil];
     };
     
     // 1.3.邮件分享
@@ -78,11 +88,13 @@
         [vc addAttachmentData:data mimeType:@"image/jepg" fileName:@"lufy.jpeg"];
         
         // 设置代理
-        vc.mailComposeDelegate = self;
+        vc.mailComposeDelegate = unsafeSelf;
         // 显示控制器
-        [self presentViewController:vc animated:YES completion:nil];
+        [unsafeSelf presentViewController:vc animated:YES completion:nil];
         
-        
+//        self.age = 10; // 强引用控制器，让它不能被释放
+//        _age = 10; // 注意本行代码会自动变成 self->_age = 10;
+//        unsafeSelf.age = 10; // 要这么用才能释放
     };
     
     JHSettingGroup *group = [[JHSettingGroup alloc]init];
